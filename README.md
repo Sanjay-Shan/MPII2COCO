@@ -36,7 +36,5 @@ Steps-:-
 1. Download the Image dataset as well as the annotations from the MPII website - http://human-pose.mpi-inf.mpg.de/#dataset
 2. Consider the folder structure attached below and place the above files in the right folder
 3. Install all the requirements as per the requirements.txt or by looking into the dependencies
-4. Firstly we will start by running the splitter to split the Image dataset into train,test and val
-    1. Either Run split.py
-    2. or split_mpii.py
+4. Firstly we will start by running the splitter to split the Image dataset into train,test and val using split_mpii.py
 6. Lastly, Run create_coco_json.py to generate json files specific to each of the splits
