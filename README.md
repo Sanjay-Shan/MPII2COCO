@@ -13,6 +13,9 @@ This repo includes scripts for the following
 3. Pillow==9.4.0
 4. scipy==1.10.1
 
+## Folder Structure
+![Screenshot from 2023-03-09 12-19-29](https://user-images.githubusercontent.com/95454351/224110190-059c5bc6-af61-4c18-8359-5a468135704d.png)
+
 ## Given Task:
 Steps-:-
 1. Download the dataset from MPII Website MPII Human Pose Database (mpg.de) -- > http://human-pose.mpi-inf.mpg.de/#dataset
