@@ -68,8 +68,8 @@ coco = {'images': [], 'categories': [], 'annotations': []} # annotation file str
 for img_id in range(img_num):
     if check_empty(annot_file['annolist'][0][0][0][img_id],'annorect') == False: # if any annotations are present
         filename = str(annot_file['annolist'][0][0][0][img_id]['image'][0][0][0][0]) 
-        print(filename)
-        print(annot_file['act'][0][0][img_id]['act_name'], annot_file['act'][0][0][img_id]['cat_name'],annot_file['act'][0][0][img_id]['act_id'])
+        #print(filename)
+        #print(annot_file['act'][0][0][img_id]['act_name'], annot_file['act'][0][0][img_id]['cat_name'],annot_file['act'][0][0][img_id]['act_id']) # ways to access activity details
 
         if filename in fnames:
             img = Image.open(osp.join(img_dir, filename))
