@@ -7,6 +7,11 @@ This repo includes scripts for the following
 2. split the dataset based on ratios for each of the sets -- > split.py
 3. create a coco format annotation file for each of the split datasets -- > create_coco_json.py
 
+## Dependencies
+1. Python 3.10
+2. numpy==1.24.2
+3. Pillow==9.4.0
+4. scipy==1.10.1
 
 ## Given Task:
 Steps-:-
@@ -26,3 +31,12 @@ Steps-:-
 4. When it comes to performing data engineering on the data, it is just not enough to split the data, but also to split it in such a way that classes are balanced in eah of the dataset. This is an important fact when it comes to CV but due to the constraint of time it wasn't accomplished.
 
 5. Coming to constructing a json format from MPII format, the code was written keeping in mind about the pose estimation and hence the required attribute which were relevant to the pose were included in the json. But it should also be noted that we coudl eventually more data into json based on the requirement, if it is going to be used by a deep learning model.
+
+## Procedure
+1. Download the Image dataset as well as the annotations from the MPII website - http://human-pose.mpi-inf.mpg.de/#dataset
+2. Consider the folder structure attached below and place the above files in the right folder
+3. Install all the requirements as per the requirements.txt or by looking into the dependencies
+4. Firstly we will start by running the splitter to split the Image dataset into train,test and val
+    1. Either Run split.py
+    2. or split_mpii.py
+6. Lastly, Run create_coco_json.py to generate json files specific to each of the splits
