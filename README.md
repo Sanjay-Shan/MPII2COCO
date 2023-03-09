@@ -40,4 +40,12 @@ Steps-:-
 2. Consider the folder structure attached above and place the above files in the right folder (brief description on how the files needs to be placed is provided in the README.md section of each folder).
 3. Install all the requirements as per the requirements.txt or by looking into the dependencies
 4. Firstly we will start by running the splitter to split the Image dataset into train,test and val using split_mpii.py
-6. Lastly, Run create_coco_json.py to generate json files specific to each of the splits
+6. Secondly, Run create_coco_json.py to generate json files specific to each of the splits
+7. Lastly, we can go ahead and get some of the basic statistics of each of the splits using stats.py ( It simply includes statistics sround Image dimensions, Detected People etc. Had a plan to add more statistics and plots based on body points, but couldn't be accomplished due to the constraint of time)
+
+## Future works
+1. Implement Dataset splitter based on Class Imbalance improvement.
+2. Custom COCO format creator - Get the data requirement from the user and add only those attributes into the JSON.
+3. Provided statistical analysis on the occluded points in the image per person
+4. Body point Analysis - Points that mostly get occluded in a specific action category. For ex: It is pretty common that knee joint gets occluded when a person is riding a horse etc.
+5. Average height of a person in the dataset -- based on the bounding box dimensions.
