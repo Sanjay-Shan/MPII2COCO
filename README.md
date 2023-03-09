@@ -10,11 +10,11 @@ This repo includes scripts for the following
 
 ## Given Task:
 Steps-:-
-    1. Download the dataset from MPII Website MPII Human Pose Database (mpg.de) -- > http://human-pose.mpi-inf.mpg.de/#dataset
-    2. Write a python script which splits the data into Train, Validation and Test (70,20,10)
-    3. Generate 3 json files in COCO format for Train , Validation and Test
-    4. Also make individual folders for image files for each split
-    5. Upload the code with the folder structure on GitHub and share the link.(Don’t have to upload all the images files to GitHub) 
+1. Download the dataset from MPII Website MPII Human Pose Database (mpg.de) -- > http://human-pose.mpi-inf.mpg.de/#dataset
+2. Write a python script which splits the data into Train, Validation and Test (70,20,10)
+3. Generate 3 json files in COCO format for Train , Validation and Test
+4. Also make individual folders for image files for each split
+5. Upload the code with the folder structure on GitHub and share the link.(Don’t have to upload all the images files to GitHub) 
     
 ## Thoughts:
 1. It was noticed that the MPII Human Pose dataset was majorly designed for a competititon and hence the testset which were supposed to recieve a rich set of annotations were withheld so as to ensure participants don't tune their model on the test set.
